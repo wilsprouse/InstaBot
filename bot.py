@@ -4,7 +4,7 @@ from time import sleep, strftime
 from random import randint
 #import pandas as pd
 
-chromedriver_path = '/Users/williamsprouse/Desktop/WAVEX/Auto Insta/instaBot/chromedriver' # Change this to your own chromedriver path!
+chromedriver_path = '/Users/williamsprouse/Desktop/WAVEX/Auto Insta/chromedriver' # Change this to your own chromedriver path!
 webdriver = webdriver.Chrome(executable_path=chromedriver_path)
 sleep(2)
 webdriver.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
