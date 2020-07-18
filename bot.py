@@ -80,8 +80,12 @@ class InstagramRobot:
 
         button_notifications = self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
         button_notifications.click()
-        sleep(8)
-		
+        sleep(3)
+
+    def search(self, username):
+        #search_bar = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div/div/span[2]')
+        search_bar = self.driver.find_element_by_name('search')
+        search_bar.send_keys(username)
 	
 
 
