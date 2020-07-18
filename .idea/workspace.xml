@@ -22,15 +22,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/WAVEX/Auto Insta/instaBot/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -47,8 +38,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/bot.py" />
-        <option value="$USER_HOME$/Desktop/WAVEX/Auto Insta/instaBot/main.py" />
         <option value="$USER_HOME$/Desktop/WAVEX/Auto Insta/instaBot/bot.py" />
+        <option value="$USER_HOME$/Desktop/WAVEX/Auto Insta/instaBot/main.py" />
       </list>
     </option>
   </component>
@@ -66,6 +57,10 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="autoInsta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="instaBot" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="autoInsta" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
@@ -140,7 +135,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -199,8 +193,8 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/WAVEX/Auto Insta/instaBot/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
