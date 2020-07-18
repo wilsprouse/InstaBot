@@ -77,6 +77,10 @@ class InstagramRobot:
         button_dontSavePassword = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/div/div/button')
         button_dontSavePassword.click()
         sleep(3)
+
+        #button_notifications = webdriver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
+        #button_notifications.click()
+        # sleep(8)
 		
 	
 
