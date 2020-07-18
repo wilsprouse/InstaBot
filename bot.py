@@ -85,9 +85,10 @@ class InstagramRobot:
     def search(self, username):
         #search_bar = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div/div/span[2]')
         search_bar = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div/div/span[2]')
-        #search_bar.click()
+        search_bar.click()
         sleep(1)
-        search_bar.send_keys(username)
+        search_bar2 = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')
+        search_bar2.send_keys(username)
 	
 
 
