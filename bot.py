@@ -90,6 +90,7 @@ class InstagramRobot:
 
         search_bar2 = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')
         search_bar2.send_keys(username)
+        sleep(4)
         search_bar2.send_keys(Keys.RETURN)
 
 	
