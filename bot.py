@@ -5,8 +5,9 @@ from random import randint
 import configparser
 #import pandas as pd
 
-chromedriver_path = '/Users/williamsprouse/Desktop/WAVEX/Auto Insta/chromedriver' # Change this to your own chromedriver path!
-webdriver = webdriver.Chrome(executable_path=chromedriver_path)
+"""
+#chromedriver_path = '/Users/williamsprouse/Desktop/WAVEX/Auto Insta/chromedriver' # Change this to your own chromedriver path!
+#webdriver = webdriver.Chrome(executable_path=chromedriver_path)
 sleep(2)
 webdriver.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
 sleep(3)
@@ -32,12 +33,46 @@ try:
 
     button_notifications = webdriver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
     button_notifications.click()
-    sleep(8)
+    #sleep(8)
 
-    notnow = webdriver.find_element_by_css_selector('body > div:nth-child(13) > div > div > div > div.mt3GC > button.aOOlW.HoLwm')
-    notnow.click() #comment these last 2 lines out, if you don't get a pop up asking about notifications
+    #notnow = webdriver.find_element_by_css_selector('body > div:nth-child(13) > div > div > div > div.mt3GC > button.aOOlW.HoLwm')
+    #notnow.click() #comment these last 2 lines out, if you don't get a pop up asking about notifications
 
 except:
     pass
     #webdriver.close()
 
+"""
+class InstagramRobot:
+
+    def __init__(self, chromedriverPath, config):
+        self.driver = webdriver.Chrome(executable_path=chromedriverPath)
+        self.config = configparser.ConfigParser()
+        self.config.read(config)
+        #self.config.read(config)
+        #print(config)
+        self.username = self.config['CREDENTIALS']['username']
+        self.password = self.config['CREDENTIALS']['password']
+
+    def getConfig(self):
+        #retConfig = configparser.ConfigParser()
+        return '1'
+
+    def start(self):
+        webdriver = self.driver
+        sleep(2)
+        webdriver.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
+        sleep(3)
+
+    def login(self):
+        username = self.driver.find_element_by_name('username')
+        username.send_keys(self.username)
+		
+        password = self.driver.find_element_by_name('password')
+        password.send_keys(self.password)
+		
+	
+
+
+
+pass
