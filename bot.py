@@ -93,7 +93,9 @@ class InstagramRobot:
 
         sleep(4)
 
-        search_bar2.submit()
+        click_user = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div[2]/div/a[1]/div/div[2]/div/span')
+        click_user.click()
+        #search_bar2.submit()
 
 	
 
