@@ -47,16 +47,12 @@ class InstagramRobot:
 
     def __init__(self, chromedriverPath, config):
         self.driver = webdriver.Chrome(executable_path=chromedriverPath)
+
         self.config = configparser.ConfigParser()
         self.config.read(config)
-        #self.config.read(config)
-        #print(config)
+
         self.username = self.config['CREDENTIALS']['username']
         self.password = self.config['CREDENTIALS']['password']
-
-    def getConfig(self):
-        #retConfig = configparser.ConfigParser()
-        return '1'
 
     def start(self):
         webdriver = self.driver
@@ -70,6 +66,9 @@ class InstagramRobot:
 		
         password = self.driver.find_element_by_name('password')
         password.send_keys(self.password)
+
+        button_login = webdriver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button/div')
+        button_login.click()
 		
 	
 
