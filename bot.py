@@ -72,7 +72,7 @@ class InstagramRobot:
 
         sleep(3)
 
-        button_dontSavePassword = webdriver.find_element_by_xpath('./section/main/div/div/div/section/div/button')
+        button_dontSavePassword = self.driver.find_element_by_xpath('./section/main/div/div/div/section/div/button')
         button_dontSavePassword.click()
         sleep(3)
 		
