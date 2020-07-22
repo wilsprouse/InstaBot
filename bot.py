@@ -101,8 +101,9 @@ class InstagramRobot:
     def follow(self, username):
         self.search(username)
         sleep(4)
-        follow_button = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[2]/div/span/span[1]/button')
+        #follow_button = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[2]/div/span/span[1]/button')
         #						   //*[@id="react-root"]/section/main/div/header/section/div[2]/div/span/span[1]/button
+        self.driver.find_elements_by_xpath("//*[contains(text(), 'Follow')]")
         follow_button.click()
 		
 
