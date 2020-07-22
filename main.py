@@ -3,7 +3,8 @@ from bot import InstagramRobot
 insta = InstagramRobot('/Users/williamsprouse/Desktop/WAVEX/AutoInsta/chromedriver', '../config.ini')
 insta.start()
 insta.login()
-#insta.search("_codehub_")
+insta.search("_codehub_")
+insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
 
 
