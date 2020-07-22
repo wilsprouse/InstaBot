@@ -98,7 +98,12 @@ class InstagramRobot:
         click_user.click()
         #search_bar2.submit()
 
-	
+    def follow(self, username):
+        self.search(username):
+        sleep(1)
+	follow_button = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[2]/div/span/span[1]/button')
+	follow_button.click()
+		
 
 
 
