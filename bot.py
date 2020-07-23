@@ -84,7 +84,8 @@ class InstagramRobot:
         unfollow_confirm_button.click()         
         sleep(2)
 
-        #def scrollHashtag(self, hashtag):
-        
-
+    def scrollHashtag(self, hashtag):
+        """Searches a hashtag and scrolls through the pictures and likes them. Can be called on its own after login"""    
+        sleep(2)
+        self.search("#" + str(hashtag))
 pass
