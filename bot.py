@@ -108,10 +108,10 @@ class InstagramRobot:
         sleep(4)
 
         #like_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/svg')
-        like_button = self.driver.find_elements_by_class_name('_8-yf5 ')
+        like_button = self.driver.find_element_by_class_name('_9AhH0')
         #like_button = self.driver.find_element_by_name('Like')
-        like_button[0].click()
-
+        like_button.click()
+        like_button.click()
 
 
 
