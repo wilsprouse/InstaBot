@@ -1,4 +1,5 @@
 from bot import InstagramRobot
+from time import sleep
 
 insta = InstagramRobot('/Users/williamsprouse/Desktop/WAVEX/AutoInsta/chromedriver', '../config.ini')
 insta.start()
