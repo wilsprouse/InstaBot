@@ -16,5 +16,7 @@ follow_list = ["_codehub_", "programmerplus"]
 
 for i in follow_list:
 	#insta.follow(i)
+	pass
+	pass
 
 
