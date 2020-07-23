@@ -13,3 +13,8 @@ follow_list = ["_codehub_", "programmerplus"]
 
 for i in follow_list:
 	insta.follow(i)
+
+sleep(10)
+for i in follow_list:
+	insta.search(i)
+	insta.unfollow(i)
