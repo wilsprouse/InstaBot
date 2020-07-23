@@ -4,6 +4,7 @@ insta = InstagramRobot('/Users/williamsprouse/Desktop/WAVEX/AutoInsta/chromedriv
 insta.start()
 insta.login()
 insta.search("_codehub_")
+sleep(5)
 insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
 
