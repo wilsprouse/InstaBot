@@ -101,7 +101,8 @@ class InstagramRobot:
 
         sleep(2)
 
-        click_first_user = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div')
+        #click_first_user = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div')
+        click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
