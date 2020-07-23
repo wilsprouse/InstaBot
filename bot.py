@@ -112,7 +112,7 @@ class InstagramRobot:
         #sleep(3)
         #unfollow_button = self.driver.find_elements_by_xpath("//*[contains(text(), 'Following')]")
         #unfollow_button = self.driver.find_element_by_name("Following")
-        unfollow_button = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[2]/div[2]/span/span[1]/button/div/spawn')
+        unfollow_button = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[2]/div[2]/span/span[1]/button/div/span')
 
   
         print(unfollow_button)
