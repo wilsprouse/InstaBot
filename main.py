@@ -15,6 +15,6 @@ insta.unfollow("_codehub_")
 follow_list = ["_codehub_", "programmerplus"]
 
 for i in follow_list:
-	insta.follow(i)
+	#insta.follow(i)
 
 

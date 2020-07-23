@@ -125,7 +125,9 @@ class InstagramRobot:
         #unfollow_button = self.driver.find_element(By.XPATH, '//button[text()="Following"]')
         unfollow_button = self.driver.find_element_by_class_name('glyphsSpriteFriend_Follow.u-__7')
         unfollow_button.click()
-         
+
+        unfollow_confirm_button = self.driver.find_element_by_xpath("//*[contains(text(), 'Unfollow')]")
+        unfollow_confirm_button.click()         
 
 
 
