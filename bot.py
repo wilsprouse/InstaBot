@@ -95,12 +95,16 @@ class InstagramRobot:
         search_bar2.send_keys("#" + str(hashtag))
 
         sleep(2)
+
         click_hashtag = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div[2]/div/a[1]/div')
-        #						   //*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div[2]/div/a[1]/div
-        #sleep(2)
-        #click_hashtag = self.driver.find_element_by_class_name('z556c')
         click_hashtag.click()
-pass
+
+        sleep(2)
+
+        click_first_user = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div')
+        click_first_user.click()
+
+pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
 
 
 
