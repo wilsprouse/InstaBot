@@ -87,5 +87,18 @@ class InstagramRobot:
     def scrollHashtag(self, hashtag):
         """Searches a hashtag and scrolls through the pictures and likes them. Can be called on its own after login"""    
         sleep(2)
-        self.search("#" + str(hashtag))
+        search_bar = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div/div/span[2]')
+        search_bar.click()
+        sleep(1)
+
+        search_bar2 = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input')
+        search_bar2.send_keys("#" + str(hashtag))
+
+        click_hashtag = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div[2]/div/a[1]/div')
+        click_hashtag.click()
 pass
+
+
+
+
+
