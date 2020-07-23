@@ -35,7 +35,7 @@ class InstagramRobot:
         sleep(1)
 
         #button_login = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button/div')
-        button_login = self.driver.find_elements_by_xpath('//*[contains(text(), 'Log in')]')
+        button_login = self.driver.find_elements_by_xpath('//*[contains(text(), "Log in")]')
         #follow_button = self.driver.find_elements_by_xpath("//*[contains(text(), 'Follow')]")
         button_login[0].click()
 
