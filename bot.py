@@ -117,7 +117,7 @@ class InstagramRobot:
         #unfollow_button = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[2]/div[2]/span/span[1]/button/div/span')
 
         actions = ActionChains(self.driver)
-        actions.move_to_element_with_offset(driver.find_element_by_tag_name('body'), 0,0)
+        actions.move_to_element_with_offset(self.driver.find_element_by_tag_name('body'), 0,0)
         actions.move_by_offset(762, 274).click().perform()
   
         #print(unfollow_button)
