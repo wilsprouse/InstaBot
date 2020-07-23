@@ -113,9 +113,9 @@ class InstagramRobot:
         #like_button.click()
         #like_button.click()
         actions = ActionChains(self.driver)
-	actions.click(like_button)
-	# perform the operation on the element
-	actions.perform()
+        actions.click(like_button)
+        # perform the operation on the element
+        actions.perform()
 
 
 
