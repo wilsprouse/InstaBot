@@ -80,6 +80,7 @@ class InstagramRobot:
         sleep(3)
 
         button_notifications = self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
+        # 							  /html/body/div[3]/div/div/div/div[3]/button[2]
         button_notifications.click()
         sleep(3)
 
