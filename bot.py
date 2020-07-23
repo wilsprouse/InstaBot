@@ -122,7 +122,8 @@ class InstagramRobot:
         #actions.move_by_offset(762, 274).click().perform()
   
         #print(unfollow_button)
-        unfollow_button = self.driver.find_element(By.XPATH, '//button[text()="Following"]')
+        #unfollow_button = self.driver.find_element(By.XPATH, '//button[text()="Following"]')
+        unfollow_button = self.driver.find_element_by_class_name('glyphsSpriteFriend_Follow.u-__7')
         unfollow_button.click()
          
 
