@@ -84,7 +84,7 @@ class InstagramRobot:
         unfollow_confirm_button.click()         
         sleep(2)
 
-    def scrollHashtag(self, hashtag):
+    def scrollHashtag(self, hashtag, amount):
         """Searches a hashtag and scrolls through the pictures and likes them. Can be called on its own after login"""    
         sleep(2)
         search_bar = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div/div/span[2]')
@@ -104,6 +104,16 @@ class InstagramRobot:
         #click_first_user = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div')
         click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
+
+        sleep(4)
+
+        like_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/svg')
+        like_button.click()
+
+
+
+
+
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
 

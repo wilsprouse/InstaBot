@@ -7,7 +7,7 @@ insta.login()
 #insta.search("coding")
 #insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
-insta.scrollHashtag("coding")
+insta.scrollHashtag("coding", 1)
 
 
 follow_list = ["_codehub_", "programmerplus"]
