@@ -82,6 +82,7 @@ class InstagramRobot:
 
         unfollow_confirm_button = self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[1]')
         unfollow_confirm_button.click()         
+        sleep(2)
 
 
 
