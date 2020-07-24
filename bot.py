@@ -108,7 +108,7 @@ class InstagramRobot:
         click_first_user.click()
 
 
-	for i in range(amount):
+        for i in range(amount):
              
              sleep(4)
 
