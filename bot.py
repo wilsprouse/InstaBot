@@ -8,6 +8,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 #import pandas as pd
 
 
+
 class InstagramRobot:
 
     def __init__(self, chromedriverPath, config):
@@ -107,7 +108,7 @@ class InstagramRobot:
         click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
 
-
+        scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a')
         for i in range(amount):
              
              sleep(4)
@@ -119,9 +120,8 @@ class InstagramRobot:
 
              sleep(2)
 
-             scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a')
              scroll_button.click()
-
+             scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a[2]')
 
 
 
