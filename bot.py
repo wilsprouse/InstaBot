@@ -117,7 +117,8 @@ class InstagramRobot:
 
         sleep(2)
 
-        scroll_button = self.driver.find_element_by_class_name(' _65Bje  coreSpriteRightPaginationArrow')
+        #scroll_button = self.driver.find_element_by_class_name(' _65Bje  coreSpriteRightPaginationArrow')
+        scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a')
         scroll_button.click()
 
 
