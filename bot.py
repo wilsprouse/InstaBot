@@ -107,19 +107,20 @@ class InstagramRobot:
         click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
 
-        sleep(4)
 
-        like_button = self.driver.find_element_by_class_name('fr66n')
-        print(like_button)
-        actions = ActionChains(self.driver)
-        actions.click(like_button)
-        actions.perform()
+	for i in range(amount):
+             
+             sleep(4)
 
-        sleep(2)
+             like_button = self.driver.find_element_by_class_name('fr66n')
+             actions = ActionChains(self.driver)
+             actions.click(like_button)
+             actions.perform()
 
-        #scroll_button = self.driver.find_element_by_class_name(' _65Bje  coreSpriteRightPaginationArrow')
-        scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a')
-        scroll_button.click()
+             sleep(2)
+
+             scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a')
+             scroll_button.click()
 
 
 
