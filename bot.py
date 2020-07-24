@@ -104,22 +104,21 @@ class InstagramRobot:
 
         sleep(6)
 
-        #click_first_user = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div')
         click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
 
         sleep(4)
 
-        #like_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/svg')
         like_button = self.driver.find_element_by_class_name('fr66n')
         print(like_button)
-        #like_button = self.driver.find_element_by_name('Like')
-        #like_button.click()
-        #like_button.click()
         actions = ActionChains(self.driver)
         actions.click(like_button)
-        # perform the operation on the element
         actions.perform()
+
+        sleep(2)
+
+        scroll_button = self.driver.find_element_by_class_name(' _65Bje  coreSpriteRightPaginationArrow')
+        scroll_button.click()
 
 
 
