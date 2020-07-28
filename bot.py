@@ -129,14 +129,14 @@ class InstagramRobot:
         sleep(3)
 
         comment_button = self.driver.find_element_by_css_selector('span._15y0l')
+        comment_button.send_keys(comment)
+        #actions = ActionChains(self.driver)
+        #actions.click(comment_button)
 
-        actions = ActionChains(self.driver)
-        actions.click(comment_button)
+        #actions.perform() 
 
-        actions.perform() 
-
-        add_comment = self.driver.find_element_by_css_selector('form.X7cDz')
-        add_comment.send_keys(comment)
+        #add_comment = self.driver.find_element_by_css_selector('form.X7cDz')
+        #add_comment.send_keys(comment)
 
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
