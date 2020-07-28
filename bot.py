@@ -138,8 +138,8 @@ class InstagramRobot:
         add_comment = self.driver.find_element_by_css_selector('textarea.Ypffh')
         add_comment.send_keys(comment)
 
-        #post = self.driver.find_element_by_name('Post')
-        post = self.driver.find_elements_by_xpath('//*[contains(text(), "Post")]')
+        post = self.driver.find_element_by_name('Post')
+        #post = self.driver.find_elements_by_xpath('//*[contains(text(), "Post")]')
         
         post.click()
 
