@@ -142,7 +142,7 @@ class InstagramRobot:
 
         post = self.driver.find_elements_by_css_selector('button.sqdOP.yWX7d.y3zKF')
         print(post)        
-        post[2].click()
+        post[3].click()
 
 
 
