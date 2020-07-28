@@ -8,6 +8,7 @@ insta.login()
 #insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
 insta.scrollHashtag("programming", 1)
+insta.comment("yo")
 
 '''
 follow_list = ["lets.coding", "cifertech", "programunity", "hackers.pg", "misscod3r", "thedevlife", "codinggoats",
