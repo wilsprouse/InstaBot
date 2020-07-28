@@ -129,7 +129,7 @@ class InstagramRobot:
 
         #self.driver.execute_script("window.scrollTo(0, 1080)") 
 
-        comment_button = self.driver.find_element_by_css_selector('_8-yf5 ')
+        comment_button = self.driver.find_element_by_css_selector('span._15y0l')
         actions = ActionChains(self.driver)
         print(comment_button)
         #print(comment_button)
