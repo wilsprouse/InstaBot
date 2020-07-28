@@ -7,7 +7,7 @@ insta.login()
 #insta.search("coding")
 #insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
-insta.scrollHashtag("programming", 1)
+insta.scrollHashtag("coding", 1)
 insta.comment("yo")
 
 '''
