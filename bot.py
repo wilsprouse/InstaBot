@@ -125,13 +125,14 @@ class InstagramRobot:
 
     def comment(self, comment):
         """Picture must be open, similar to how scrollHashtag opens the pages"""
-        comment_button = self.driver.find_element_by_class_name('QBdPU ')
+        comment_button = self.driver.find_elements_by_class_name('QBdPU ')
 
         #self.driver.execute_script("window.scrollTo(0, 1080)") 
 
         #comment_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[2]')
         actions = ActionChains(self.driver)
-        actions.click(comment_button)
+        print(comment_button[1])
+        actions.click(comment_button[1])
         
         sleep(2)
 
