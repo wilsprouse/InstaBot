@@ -38,7 +38,7 @@ class InstagramRobot:
         #button_login = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button/div')
         button_login = self.driver.find_elements_by_xpath('//*[contains(text(), "Log In")]')
         #follow_button = self.driver.find_elements_by_xpath("//*[contains(text(), 'Follow')]")
-        print(button_login)
+        #print(button_login)
         button_login[0].click()
 
         sleep(3)
@@ -132,7 +132,7 @@ class InstagramRobot:
         #comment_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[2]')
         actions = ActionChains(self.driver)
         print(comment_button)
-        print(comment_button[0])
+        #print(comment_button)
         actions.click(comment_button[0])
         
         sleep(2)
