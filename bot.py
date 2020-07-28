@@ -131,8 +131,9 @@ class InstagramRobot:
 
         #comment_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[2]')
         actions = ActionChains(self.driver)
-        print(comment_button[1])
-        actions.click(comment_button[1])
+        print(comment_button)
+        print(comment_button[0])
+        actions.click(comment_button[0])
         
         sleep(2)
 
