@@ -125,18 +125,18 @@ class InstagramRobot:
 
     def comment(self, comment):
         """Picture must be open, similar to how scrollHashtag opens the pages"""
-        #comment_button = self.driver.find_element_by_name('_8-yf5 ')
 
-        #self.driver.execute_script("window.scrollTo(0, 1080)") 
-        sleep(4)
+        sleep(3)
+
         comment_button = self.driver.find_element_by_css_selector('span._15y0l')
+
         actions = ActionChains(self.driver)
-        print(comment_button)
-        #print(comment_button)
         actions.click(comment_button)
-        
 
         actions.perform() 
+
+        add_comment = self.driver.find_element_by_css_selector('form.X7cDz')
+        add_comment.sendKeys(comment)
 
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
