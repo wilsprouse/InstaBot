@@ -138,6 +138,15 @@ class InstagramRobot:
         add_comment = self.driver.find_element_by_css_selector('textarea.Ypffh')
         add_comment.send_keys(comment)
 
+        post = self.driver.find_element_by_css_selector('button.sqdOP yWX7d    y3zKF     ')
+        post.click()
+
+
+
+
+
+
+
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
 
