@@ -123,7 +123,15 @@ class InstagramRobot:
              scroll_button.click()
              scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a[2]')
 
+    def comment(self, comment):
+        """Picture must be open, similar to how scrollHashtag opens the pages"""
+        comment_button = self.driver.find_element_by_class_name('_15y0l')
+        actions = ActionChains(self.driver)
+        actions.click(comment_button)
+        
+        sleep(2)
 
+        actions.perform() 
 
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
