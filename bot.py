@@ -141,8 +141,8 @@ class InstagramRobot:
         sleep(2)
 
         post = self.driver.find_elements_by_css_selector('button.sqdOP.yWX7d.y3zKF')
-        
-        post[1].click()
+        print(post)        
+        post[2].click()
 
 
 
