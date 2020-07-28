@@ -136,7 +136,7 @@ class InstagramRobot:
         actions.perform() 
 
         add_comment = self.driver.find_element_by_css_selector('form.X7cDz')
-        add_comment.sendKeys(comment)
+        add_comment.sendkeys(comment)
 
 
 pass # Still not sure why this needs to be here, something to do with calling the methods from another file. (I think...)
