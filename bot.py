@@ -105,6 +105,8 @@ class InstagramRobot:
 
         sleep(6)
 
+        new
+
         click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
 
@@ -117,6 +119,11 @@ class InstagramRobot:
              actions = ActionChains(self.driver)
              actions.click(like_button)
              actions.perform()
+
+             sleep(1)
+
+             if (i%2):
+                  self.comment('great post!')
 
              sleep(2)
 
