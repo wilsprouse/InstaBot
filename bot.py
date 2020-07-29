@@ -105,8 +105,6 @@ class InstagramRobot:
 
         sleep(6)
 
-        new
-
         click_first_user = self.driver.find_element_by_class_name('eLAPa')
         click_first_user.click()
 
