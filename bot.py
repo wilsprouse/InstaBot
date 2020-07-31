@@ -121,7 +121,7 @@ class InstagramRobot:
              sleep(1)
 
              if (i%2):
-                  self.comment('great post!')
+                  self.comment('great info!')
 
              sleep(2)
 
