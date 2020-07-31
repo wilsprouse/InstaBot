@@ -120,7 +120,7 @@ class InstagramRobot:
 
              sleep(1)
 
-             if (!(i%5)):
+             if (i%5 == 0):
                   self.comment('great info!')
 
              sleep(2)
