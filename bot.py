@@ -112,16 +112,21 @@ class InstagramRobot:
         for i in range(amount):
              
              sleep(4)
+             try:
+                  like_button = self.driver.find_element_by_class_name('fr66n')
+                  actions = ActionChains(self.driver)
+                  actions.click(like_button)
+                  actions.perform()
 
-             like_button = self.driver.find_element_by_class_name('fr66n')
-             actions = ActionChains(self.driver)
-             actions.click(like_button)
-             actions.perform()
+                  fake_button = self.driver.find_element_by_class_name('dog')
 
-             sleep(1)
+                  sleep(1)
 
-             if (i%5 == 0):
-                  self.comment('great info!')
+                  if (i%5 == 0):
+                       self.comment('great info!')
+                       sleep(2)
+             except:
+                  pass
 
              sleep(2)
 
