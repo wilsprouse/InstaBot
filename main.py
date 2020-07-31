@@ -8,8 +8,11 @@ insta.login()
 #insta.search("coding")
 #insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
-insta.scrollHashtag("invest", 20)
-insta.comment("great post")
+insta.scrollHashtag("investment", 500)
+#insta.comment("great post")
+
+print("Done!")
+
 
 '''
 follow_list = ["lets.coding", "cifertech", "programunity", "hackers.pg", "misscod3r", "thedevlife", "codinggoats",
