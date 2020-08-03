@@ -8,7 +8,7 @@ insta.login()
 #insta.search("coding")
 #insta.unfollow("_codehub_")
 #insta.follow("_codehub_")
-insta.scrollHashtag("investment", 500)
+insta.scrollHashtag("stockpick", 250)
 #insta.comment("great post")
 
 print("Done!")
