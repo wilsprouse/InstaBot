@@ -5,24 +5,17 @@ from time import sleep
 insta = InstagramRobot('/Users/williamsprouse/Desktop/WAVEX/AutoInsta/chromedriver', '../config.ini')
 insta.start()
 insta.login()
-#insta.search("coding")
-#insta.unfollow("_codehub_")
-#insta.follow("_codehub_")
-insta.scrollHashtag("investing", 250)
-#insta.comment("great post")
 
-print("Done!")
-
-
-'''
-follow_list = ["lets.coding", "cifertech", "programunity", "hackers.pg", "misscod3r", "thedevlife", "codinggoats",
-		"comment_sense", "raspizone", "codingwitharman", "hacksterio", "codingdays", "peoplewhocode",
-		"dancode_js", "codehub.py"]
+follow_list = ["the_intelligent.investor", "acorns", "your_first_million", "thebusinesshacks", "themotleyfoolofficial", "_investing", "startupbosss","bullishsecurities", "investopedia", "nasdaq"]
 
 for i in follow_list:
 	insta.follow(i)
-'''
-#sleep(10)
-#for i in follow_list:
-#	insta.search(i)
-#	insta.unfollow(i)
+
+cnt = 0
+hashtags = ['stocks', 'learntotrade', 'tradingtech','wealthmanagement']
+for i in hashtags:
+    insta.scrollHashtag(i, 500)
+    cnt += 1
+    if (cnt%10 == 0):
+        print(cnt)
+
