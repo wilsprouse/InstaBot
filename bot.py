@@ -123,7 +123,7 @@ class InstagramRobot:
                   sleep(1)
 
                   if (i%3 == 0):
-                       #self.comment('great info!')
+                       self.comment('Awesome feed!')
                        sleep(2)
              except:
                   pass
