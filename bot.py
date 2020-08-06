@@ -121,8 +121,9 @@ class InstagramRobot:
                   #fake_button = self.driver.find_element_by_class_name('dog')
 
                   sleep(1)
-
+                  print("Before comment")
                   if (i%3 == 0):
+                       print("Comment")
                        self.comment('Awesome feed!')
                        sleep(2)
              except:
