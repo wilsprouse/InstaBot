@@ -127,6 +127,7 @@ class InstagramRobot:
                        self.comment('Awesome feed!')
                        sleep(2)
              except:
+                  print("Error")
                   pass
 
              sleep(2)
