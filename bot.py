@@ -132,7 +132,8 @@ class InstagramRobot:
 
              scroll_button.click()
              scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a[2]')
-        ex_out = self.driver.find_element_by_css_selector('div.QBdPU')
+        print('Here')
+        ex_out = self.driver.find_element_by_css_selector('svg._8-yf5')
 
     def comment(self, comment):
         """Picture must be open, similar to how scrollHashtag opens the pages"""
