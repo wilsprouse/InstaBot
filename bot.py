@@ -123,7 +123,7 @@ class InstagramRobot:
                   sleep(1)
 
                   if (i%3 == 0):
-                       self.comment('great info!')
+                       #self.comment('great info!')
                        sleep(2)
              except:
                   pass
@@ -132,7 +132,7 @@ class InstagramRobot:
 
              scroll_button.click()
              scroll_button = self.driver.find_element_by_xpath('/html/body/div[4]/div[1]/div/div/a[2]')
-        ex_out = self.driver.find_element_by_class_name('QBdPU ')
+        ex_out = self.driver.find_element_by_class_name('_8-yf5 ')
 
     def comment(self, comment):
         """Picture must be open, similar to how scrollHashtag opens the pages"""
