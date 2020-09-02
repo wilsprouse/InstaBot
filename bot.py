@@ -122,7 +122,7 @@ class InstagramRobot:
 
                   sleep(1)
                   print("Before comment")
-                  if (i%3 == 0):
+                  if (i%2 == 0):
                        print("Comment")
                        self.comment('Awesome feed!')
                        sleep(2)

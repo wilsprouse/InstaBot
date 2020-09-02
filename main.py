@@ -18,7 +18,7 @@ for i in follow_list:
         insta.follow(i)
 
 '''
-insta.scrollHashtag('investinyourself', 750)
+insta.scrollHashtag('coding', 4)
 
 
 '''
